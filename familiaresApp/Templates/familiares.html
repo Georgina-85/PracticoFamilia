@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatosFamilia</title>
+</head>
+<body>
+    
+    <h3> Estos son los datos de mi familia: </h3>
+    <p>
+        {% for i in familiares %}
+            <p style="font-size: x-large">Familiar</p> 
+            <p>Nombre: {{i.nombre}}</p>
+            <p>Apellido: {{i.apellido}}</p>  
+            <p>Fecha de nacimiento: {{i.fechaDeNacimiento}}</p>
+            <p>Documento: {{i.documento}}</p>    
+            <p> </p>
+            
+        {% endfor %} 
+        <br>   
+    </p>
+
+
+
+</body>
+</html>
